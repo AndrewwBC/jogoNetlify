@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <div>
+      <h1 style="color: aliceblue" id="placar">Placar: 0</h1>
+    </div>
+    <div id="container" class="container">
+      <div id="fire" class="fireClass"></div>
+      <div id="videoDiv" class="videoDiv"></div>
+
+      <div id="goblins" class="goblins">
+        <div id="gobUp" class="goblin-up"></div>
+        <div id="gobRight" class="goblin-right"></div>
+        <div id="gobLeft" class="goblin-left"></div>
+      </div>
+    </div>
+
+    <div class="loaderContent">
+      <h1 id="loaderText"></h1>
+      <button id="btnIniciar" class="btnIniciar">Iniciar</button>
+    </div>
+
+    <button id="btnLigar" class="btnLigar">Ligar</button>
+    <script type="module" src="./js/async.js"></script>
+    <script type="module" src="./js/movimento.js"></script>
+  </body>
+</html>

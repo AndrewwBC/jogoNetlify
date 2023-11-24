@@ -1,0 +1,140 @@
+body {
+  background-color: #444;
+}
+
+@keyframes fireAnim {
+  0% {
+    background-position: 200px 200px;
+  }
+  25% {
+    background-position: 320px 400px;
+  }
+  50% {
+    background-position: 320px 660px;
+  }
+  75% {
+    background-position: 170px 800px;
+  }
+  100% {
+  }
+}
+
+@keyframes walkRight {
+  0% {
+    background-position: 0px 350px;
+    visibility: visible;
+  }
+  25% {
+    background-position: 160px 350px;
+  }
+  50% {
+    background-position: 320px 350px;
+  }
+  75% {
+    background-position: 160px 350px;
+  }
+  100% {
+    background-position: 160px 350px;
+  }
+}
+
+@keyframes walkLeft {
+  0% {
+    background-position: 0px 890px;
+    visibility: visible;
+  }
+  25% {
+    background-position: 160px 890px;
+  }
+  50% {
+    background-position: 320px 890px;
+  }
+  75% {
+    background-position: 160px 890px;
+  }
+  100% {
+  }
+}
+
+.fireClass {
+  position: absolute;
+  background-image: url("./fireImg.jpg");
+  border-radius: 999px;
+  animation: fireAnim 0.3s infinite step-end;
+  height: 40px;
+  width: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  border: 1px solid black;
+  height: 500px;
+  width: 520px;
+  position: relative;
+}
+
+.btnLigar {
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: rgb(42, 131, 131);
+  cursor: pointer;
+}
+
+.goblins {
+  margin-top: 320px;
+  height: 180px;
+  width: 160px;
+  border-top: 2px solid red;
+  position: absolute;
+}
+
+.videoDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.videoDiv video {
+  max-height: 100%;
+  padding-right: 320px;
+}
+
+.goblin-up {
+  position: absolute;
+  height: 180px;
+  width: 160px;
+  background-image: url("./goblin_big.png");
+  background-position: 0px 530px;
+}
+
+.goblin-right {
+  visibility: hidden;
+  position: absolute;
+  height: 180px;
+  width: 160px;
+  background-image: url("./goblin_big.png");
+}
+
+.goblin-left {
+  visibility: hidden;
+  position: absolute;
+  height: 180px;
+  width: 160px;
+  background-image: url("./goblin_big.png");
+  background-position: 0px 890px;
+}
+
+.btnIniciar {
+  visibility: hidden;
+}
+
+.loaderContent {
+  text-align: center;
+  color: aliceblue;
+}
